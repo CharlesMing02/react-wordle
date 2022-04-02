@@ -58,13 +58,12 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        Made with {'<3'} from CM to LX. Based on -{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
+          check out og code
         </a>{' '}
       </p>
     </BaseModal>
