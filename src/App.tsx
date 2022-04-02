@@ -41,9 +41,10 @@ import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
 
 function App() {
-  const prefersDarkMode = window.matchMedia(
-    '(prefers-color-scheme: dark)'
-  ).matches
+  const prefersDarkMode = false
+  // window.matchMedia(
+  //   '(prefers-color-scheme: dark)'
+  // ).matches
 
   const { showError: showErrorAlert, showSuccess: showSuccessAlert } =
     useAlert()

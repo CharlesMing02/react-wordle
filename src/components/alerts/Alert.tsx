@@ -27,7 +27,7 @@ export const Alert = ({
     <Transition
       show={isOpen}
       as={Fragment}
-      enter="ease-out duration-300 transition"
+      enter="ease-out duration-500 transition"
       enterFrom="opacity-0"
       enterTo="opacity-100"
       leave="transition ease-in duration-100"
@@ -37,6 +37,11 @@ export const Alert = ({
       <div className={classes}>
         <div className="p-2">
           <p className="text-sm text-center font-medium">{message}</p>
+          {variant === 'error' ? (
+            <img src="oof.jpeg" />
+          ) : (
+            <img src="nice.jpeg" />
+          )}
         </div>
       </div>
     </Transition>

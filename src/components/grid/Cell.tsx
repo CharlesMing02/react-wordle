@@ -35,9 +35,9 @@ export const Cell = ({
         status === 'correct' && isHighContrast,
       'present shadowed bg-cyan-500 text-white border-cyan-500':
         status === 'present' && isHighContrast,
-      'correct shadowed bg-green-500 text-white border-green-500':
+      'correct shadowed bg-pink-300 text-white border-green-300':
         status === 'correct' && !isHighContrast,
-      'present shadowed bg-yellow-500 text-white border-yellow-500':
+      'present shadowed bg-pink-200 text-white border-pink-200':
         status === 'present' && !isHighContrast,
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
