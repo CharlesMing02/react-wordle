@@ -5,12 +5,12 @@
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 250ms;
-  --default-cell-bg-color: theme('colors.pink.100');
-  --default-cell-border-color: theme('colors.pink.900');
-  --default-cell-text-color: theme('colors.pink.900');
-  --absent-cell-bg-color: theme('colors.pink.400');
-  --correct-cell-bg-color: theme('colors.green.400');
-  --present-cell-bg-color: theme('colors.yellow.400');
+  --default-cell-bg-color: theme('colors.white');
+  --default-cell-border-color: theme('colors.black');
+  --default-cell-text-color: theme('colors.black');
+  --absent-cell-bg-color: theme('colors.slate.400');
+  --correct-cell-bg-color: theme('colors.pink.300');
+  --present-cell-bg-color: theme('colors.pink.200');
 }
 
 .dark {
