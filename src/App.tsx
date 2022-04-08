@@ -167,6 +167,9 @@ function App() {
   }, [isGameWon, isGameLost, showSuccessAlert])
 
   const onChar = (value: string) => {
+    if (isSecretModalOpen) {
+      return
+    }
     if (
       unicodeLength(`${currentGuess}${value}`) <= MAX_WORD_LENGTH &&
       guesses.length < MAX_CHALLENGES &&
@@ -177,12 +180,18 @@ function App() {
   }
 
   const onDelete = () => {
+    if (isSecretModalOpen) {
+      return
+    }
     setCurrentGuess(
       new GraphemeSplitter().splitGraphemes(currentGuess).slice(0, -1).join('')
     )
   }
 
   const onEnter = () => {
+    if (isSecretModalOpen) {
+      return
+    }
     if (isGameWon || isGameLost) {
       return
     }
