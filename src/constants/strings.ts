@@ -2,8 +2,8 @@ export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
 export const WIN_MESSAGES = ['Nice']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
-export const NOT_ENOUGH_LETTERS_MESSAGE = 'Ur sped!'
-export const WORD_NOT_FOUND_MESSAGE = 'Rocks for brains!'
+export const NOT_ENOUGH_LETTERS_MESSAGE = 'more letters dumbass'
+export const WORD_NOT_FOUND_MESSAGE = 'Invalid!'
 export const HARD_MODE_ALERT_MESSAGE =
   'Hard Mode can only be enabled at the start!'
 export const HARD_MODE_DESCRIPTION =
@@ -25,3 +25,6 @@ export const TOTAL_TRIES_TEXT = 'Total tries'
 export const SUCCESS_RATE_TEXT = 'Success rate'
 export const CURRENT_STREAK_TEXT = 'Current streak'
 export const BEST_STREAK_TEXT = 'Best streak'
+
+export const SECRET = process.env.SECRET
+export const MESSAGE = process.env.MESSAGE
