@@ -38,9 +38,9 @@ export const Alert = ({
         <div className="p-2">
           <p className="text-sm text-center font-medium">{message}</p>
           {variant === 'error' ? (
-            <img src="oof.jpeg" />
+            <img src="oof.jpeg" alt="error" />
           ) : (
-            <img src="nice.jpeg" />
+            <img src="nice.jpeg" alt="nice" />
           )}
         </div>
       </div>
