@@ -30,7 +30,6 @@ export const SecretModal = ({
   const [jiggleState, setJiggleState] = useState('')
 
   const handleSubmit = () => {
-    console.log('submitted', secretInput, SECRET, MESSAGE)
     if (secretInput === SECRET) {
       setShowMessage(true)
     } else {
@@ -44,7 +43,6 @@ export const SecretModal = ({
   }) => {
     setSecretInput(event.target.value)
     setJiggleState('')
-    console.log(secretInput)
   }
 
   return (
@@ -99,8 +97,13 @@ export const SecretModal = ({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="w-full max-w-sm flex flex-row justify-center">
-              <p className="w-60">{MESSAGE}</p>
+            <div className="w-full max-w-sm flex flex-row justify-center overflow-y-scroll pt-5">
+              <p
+                className="w-60 text-left font-serif text-sm"
+                style={{ whiteSpace: 'pre-wrap' }}
+              >
+                {MESSAGE.replace(/\\n/gm, '\n')}
+              </p>
             </div>
           </Transition>
         </>
